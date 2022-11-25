@@ -90,7 +90,7 @@ def movie():
                 result += "電影分級:"+ dict["rate"] + "<br><br>"
                 #result += "電影介紹:"+ dict["hyperlink"] + "<br>"
         if result =="":
-            result = "抱歉,查無相關條件的電影資訊"
+            result = "抱歉,查無相關條件的電影資訊。"
         return result
     else:
         return render_template("movie.html")
